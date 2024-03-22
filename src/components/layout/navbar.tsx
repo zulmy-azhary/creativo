@@ -8,9 +8,15 @@ export const Navbar: React.FC = () => {
 
   return (
     <header className="container flex items-center justify-between py-10 px-7 lg:px-28">
-      <a href="#" className="flex items-center gap-x-2">
-        <img src="/logo.svg" alt="Creativo's Logo" />
-        <span className="text-2xl font-bold tracking-wide">Creativo.</span>
+      <a href="#" className="flex items-center gap-x-2 group">
+        <img
+          src="/logo.svg"
+          alt="Creativo's Logo"
+          className="transition-opacity group-hover:opacity-75"
+        />
+        <span className="text-2xl font-bold tracking-wide transition-colors group-hover:text-black/75">
+          Creativo.
+        </span>
       </a>
       {isLaptop ? (
         <nav className="flex items-center list-none gap-x-12">
