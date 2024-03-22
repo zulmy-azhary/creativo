@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 
 export const Hero: React.FC = () => {
   return (
-    <section className="container flex flex-col items-center justify-between w-full my-5 xl:flex-row gap-x-14 gap-y-14 md:mx-7 md:px-7 lg:mb-0 xl:my-28 lg:px-28">
-      <div className="flex flex-col 2xl:flex-row basis-6/12 gap-7 mx-7 md:mx-0">
+    <section className="container flex flex-col items-center justify-between w-full my-5 xl:flex-row gap-x-14 gap-y-14 md:px-7 lg:mb-0 xl:my-28 lg:px-28">
+      <div className="flex flex-col 2xl:flex-row basis-6/12 gap-7 px-7 md:px-0">
         <div className="h-1 bg-black rounded 2xl:translate-y-8 max-w-24 w-44 lg:w-full" />
         <div className="flex flex-col gap-y-6">
           <h1 className="text-4xl font-bold max-w-[15.25rem] md:max-w-lg md:text-5xl lg:text-6xl xl:text-7xl 2xl:max-w-[30.5rem] leading-snug xl:leading-none">
@@ -20,8 +20,8 @@ export const Hero: React.FC = () => {
       <img
         src="/assets/bg-hero.svg"
         alt="Hero Background Image"
-        className="w-full min-w-fit max-w-screen-2xl md:w-fit xl:min-w-fit xl:max-w-screen-2xl"
+        className="w-full min-w-fit max-w-screen-2xl md:w-fit xl:min-w-96 2xl:min-w-fit"
       />
     </section>
   );
-}
+};
