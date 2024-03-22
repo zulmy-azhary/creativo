@@ -29,7 +29,7 @@ const AccordionItem = <T extends string>(props: AccordionItemProps<T>) => {
         )}
         onClick={() => handleTitle(title)}
       >
-        <h1 className={cn("text-4xl tracking-tight md:tracking-wide leading-none font-medium")}>
+        <h1 className={cn("text-4xl tracking-tight md:tracking-wide leading-relaxed md:leading-none font-medium")}>
           {title}
         </h1>
         <IoIosArrowDown
