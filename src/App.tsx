@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Hero } from "@/components/layout/hero";
 import { Services } from "@/components/layout/services";
 import { Portfolio } from "@/components/layout/portfolio";
+import { CallToAction } from "@/components/layout/cta";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Hero />
         <Services />
         <Portfolio />
+        <CallToAction />
       </main>
     </div>
   );
