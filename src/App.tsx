@@ -1,10 +1,13 @@
 import { Navbar } from "@/components/layout/navbar";
+import { Hero } from "@/components/layout/hero";
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col items-center overflow-x-hidden">
       <Navbar />
-      <h1 className="font-medium">About Us</h1>
+      <main className="flex flex-col items-center w-full mt-8 lg:mt-0">
+        <Hero />
+      </main>
     </div>
   );
 }
