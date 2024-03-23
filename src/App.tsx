@@ -3,6 +3,7 @@ import { Hero } from "@/components/layout/hero";
 import { Services } from "@/components/layout/services";
 import { Portfolio } from "@/components/layout/portfolio";
 import { CallToAction } from "@/components/layout/cta";
+import { Footer } from "@/components/layout/footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Portfolio />
         <CallToAction />
       </main>
+      <Footer />
     </div>
   );
 }
