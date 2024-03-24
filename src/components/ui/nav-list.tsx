@@ -16,7 +16,7 @@ export const NavList: React.FC<NavListProps> = (props) => {
           <NavItem
             key={content}
             href={href ?? "#"}
-            className="font-light tracking-tight hover:font-light md:tracking-wider text-white/50 hover:text-white"
+            className="font-light tracking-tight hover:font-light md:tracking-wider text-white/50 lg:hover:text-white"
           >
             {content}
           </NavItem>

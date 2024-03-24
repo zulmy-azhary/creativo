@@ -12,7 +12,7 @@ export const NavItem: React.FC<NavItemProps> = (props) => {
         {...rest}
         href="#"
         className={cn(
-          "text-lg tracking-wide text-slate-500 hover:text-black hover:font-semibold transition-colors",
+          "text-lg tracking-wide text-slate-500 hover:text-white lg:hover:text-black hover:font-semibold transition-colors",
           className
         )}
       >
