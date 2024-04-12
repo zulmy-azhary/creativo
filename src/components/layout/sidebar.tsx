@@ -1,3 +1,4 @@
+import { useToggle } from "@/context/toggle";
 import { useAnimation, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { RxCross1 } from "react-icons/rx";
@@ -11,15 +12,18 @@ export const Sidebar: React.FC<SidebarProps> = (props) => {
   const { onClose, children } = props;
   const ref = useRef(null);
   const controls = useAnimation();
+  const { isOpen } = useToggle();
 
   useEffect(() => {
-    document.body.style.overflow = "hidden";
-    controls.start("visible");
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+      controls.start("visible");
+    }
 
     return () => {
       document.body.removeAttribute("style");
     };
-  }, []);
+  }, [isOpen]);
 
   const isClosed = () => {
     onClose();
